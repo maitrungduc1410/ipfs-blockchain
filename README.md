@@ -42,7 +42,7 @@ npm run dev or npm run watch (it's up to you)
 Then open your browser and go to route <pre>http://localhost:8000/</pre>
 
 And then to try to test your app.
-Try to add new file or rename...(do whatever you want). Right after that, look at the terminal tab you're running <b>Geth>, you'll see a new transaction appended. then you should run this command to confirm the transaction:
+Try to add new file or rename...(do whatever you want). Right after that, look at the terminal tab you're running <b>Geth</b>, you'll see a new transaction appended. then you should run this command to confirm the transaction:
 
 ```
 geth attach
