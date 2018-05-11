@@ -40,7 +40,18 @@ php artisan serve
 npm run dev or npm run watch (it's up to you)
 ```
 Then open your browser and go to route <pre>http://localhost:8000/</pre>
-End with an example of getting some data out of the system or using it for a little demo
+
+And then to try to test your app.
+Try to add new file or rename...(do whatever you want). Right after that, look at the terminal tab you're running <b>Geth>, you'll see a new transaction appended. then you should run this command to confirm the transaction:
+
+```
+geth attach
+```
+
+Then when you access geth console, start mining, by run this:
+```
+miner.start(1) //the number 1 is the cpu core you want to spend on mining
+```
 
 ## Running the tests
 
