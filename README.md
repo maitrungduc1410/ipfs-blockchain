@@ -11,8 +11,6 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Laravel
-VueJS
 Geth
 Go-ipfs
 ```
@@ -21,18 +19,27 @@ Go-ipfs
 
 A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
-
+First you need to install <b>Geth</b>. Follow this instruction [GETH](https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum)
+You should set up, init your genesis block, then when you run your command to start Geth, you should add these options at the end of the command.
 ```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+--rpc --rpccorsdomain "*" --rpcapi “web3,eth,personal” 
 ```
 
+Then you should install <b>go-ipfs</b>. Then run ipfs in daemon with this command:
+
+```
+ipfs daemon
+```
+Then to start your app you run the following commands:
+
+```
+php artisan serve
+```
+
+```
+npm run dev or npm run watch (it's up to you)
+```
+Then open your browser and go to route <pre>http://localhost:8000/</pre>
 End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
