@@ -2,6 +2,11 @@
 
 This project demo how to intergrate blockchain with IPFS to store and track file history. This app build with Laravel, VueJS, IPFS and Ethereum blockchain
 
+## Introduction
+Saving data on blockchain is very expensive. You should see this [article](https://medium.com/ipdb-blog/forever-isnt-free-the-cost-of-storage-on-a-blockchain-database-59003f63e01).
+
+With [IPFS](https://ipfs.io/) we can "save" a lot of data into blockchain by saving the hash of data which saved in IPFS system.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -50,59 +55,17 @@ geth attach
 
 Then when you access geth console, start mining, by run this:
 ```
-miner.start(1) //the number 1 is the cpu core you want to spend on mining
+miner.start(1) //the number '1' is the number of cpu core you want to spend on mining
 ```
+After block has the transaction has mined. You can go back your browser and re-check your file. 
+Now your file's profile has been saved into the transaction permantly. You can right click on the file and view its detail info in the transaction.
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+This app has other features, you can play around with them.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* [IPFS](https://ipfs.io/) - A peer-to-peer hypermedia protocol
+* [Geth](https://geth.ethereum.org/) - Go Ethereum
+* [Laravel](https://laravel.com/) - The PHP framework used
+* [VueJS](https://vuejs.org/) - The Progressive JavaScript Framework
+* [Buefy](https://buefy.github.io/) - Lightweight UI components for Vue.js
